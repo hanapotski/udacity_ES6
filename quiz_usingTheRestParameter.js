@@ -5,7 +5,8 @@
 // your code goes here
 
 function average(...nums) {
-    let sum = 0, ave = 0, length = nums.length;
+    let sum = 0
+    let length = nums.length;
     if (length === 0){
         return 0;
     } else {
