@@ -1,1 +1,2 @@
-# udacity_ES6
+# Udacity - ES6
+
