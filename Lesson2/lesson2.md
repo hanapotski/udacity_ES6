@@ -484,3 +484,22 @@ myMaple.changeSeason('spring');
 ```
 
 Both this code and the class-style code above achieve the same functionality.
+
+
+### Working with subclasses
+Like most of the new additions, there's a lot less setup code and it's a lot cleaner syntax to create a subclass using class, super, and extends.
+
+Just remember that, under the hood, the same connections are made between functions and prototypes.
+
+super must be called before this
+In a subclass constructor function, before this can be used, a call to the super class must be made.
+```
+class Apple {}
+class GrannySmith extends Apple {
+  constructor(tartnessLevel, energy) {
+    this.tartnessLevel = tartnessLevel; // `this` before `super` will throw an error!
+    super(energy); 
+  }
+}
+```
+
